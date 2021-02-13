@@ -886,7 +886,7 @@ void SavePlot(const std::vector<MeasuredAtmosphere*>& measurements,
 
 }  // anonymous namespace
 
-int main(int argc, char** argv) {
+int main_main(int argc, char** argv) {
   if (argc < 2) {
     std::cerr << "Usage: " << argv[0]
               << " <libRatran uvspec path> <libRadtran data path>" << std::endl;

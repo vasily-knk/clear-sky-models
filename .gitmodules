@@ -7,3 +7,6 @@
 [submodule "external/progress_bar"]
 	path = external/progress_bar
 	url = https://github.com/ebruneton/progress_bar
+[submodule "external/gcem"]
+	path = external/gcem
+	url = https://github.com/kthohr/gcem.git

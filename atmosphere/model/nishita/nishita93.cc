@@ -169,7 +169,7 @@ RadianceSpectrum Nishita93::GetSkyRadiance(Length altitude, Angle sun_zenith,
 
 void Nishita93::GetOpticalLengths(Length r, Number mu, Length* rayleigh_length,
     Length* mie_length) const {
-  constexpr Number a =
+  const Number a =
       exp(-(AtmosphereRadius - EarthRadius) / RayleighScaleHeight) - 1.0;
   Number x = (exp(-(r - EarthRadius) / RayleighScaleHeight) - 1.0) / a;
   Number y = r * sqrt(1.0 - mu * mu) / AtmosphereRadius;
@@ -185,7 +185,7 @@ void Nishita93::GetOpticalLengths(Length r, Number mu, Length* rayleigh_length,
 }
 
 Length Nishita93::GetSphereRadius(int sphere_index) {
-  constexpr Number a =
+  const Number a =
       exp(-(AtmosphereRadius - EarthRadius) / RayleighScaleHeight) - 1.0;
   double x = sphere_index / static_cast<double>(kNumSphere - 1);
   return EarthRadius - RayleighScaleHeight * log(a * x + 1.0);

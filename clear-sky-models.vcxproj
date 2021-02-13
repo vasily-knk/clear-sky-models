@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>16.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{ba66b2f3-32c4-4f27-a508-dd9231ad533d}</ProjectGuid>
+    <RootNamespace>clearskymodels</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <Import Project="common.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="atmosphere/atmosphere.cc" />
+    <ClCompile Include="atmosphere/atmosphere_test.cc" />
+    <ClCompile Include="atmosphere/color.cc" />
+    <ClCompile Include="atmosphere/comparisons.cc" />
+    <ClCompile Include="atmosphere/hemispherical_function_test.cc" />
+    <ClCompile Include="atmosphere/measurement/measured_atmosphere.cc" />
+    <ClCompile Include="atmosphere/measurement/measured_atmosphere_test.cc" />
+    <ClCompile Include="atmosphere/measurement/measured_atmospheres.cc" />
+    <ClCompile Include="atmosphere/model/bruneton/bruneton.cc" />
+    <ClCompile Include="atmosphere/model/bruneton/core.cc" />
+    <ClCompile Include="atmosphere/model/haber/haber.cc" />
+    <ClCompile Include="atmosphere/model/hosek/ArHosekSkyModel.cc" />
+    <ClCompile Include="atmosphere/model/hosek/hosek.cc" />
+    <ClCompile Include="atmosphere/model/libradtran/libradtran.cc" />
+    <ClCompile Include="atmosphere/model/nishita/nishita93.cc" />
+    <ClCompile Include="atmosphere/model/nishita/nishita96.cc" />
+    <ClCompile Include="atmosphere/model/oneal/oneal.cc" />
+    <ClCompile Include="atmosphere/model/polradtran/polradtran.cc" />
+    <ClCompile Include="atmosphere/model/preetham/preetham.cc" />
+    <ClCompile Include="atmosphere/sun_direction.cc" />
+    <ClCompile Include="external/dimensional_types/test/test_main.cc" />
+    <ClCompile Include="external/progress_bar/util/progress_bar.cc" />
+    <ClCompile Include="main.cc" />
+    <ClCompile Include="physics/cie.cc" />
+    <ClCompile Include="physics/cie_test.cc" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="atmosphere/atmosphere.h" />
+    <ClInclude Include="atmosphere/color.h" />
+    <ClInclude Include="atmosphere/comparisons.h" />
+    <ClInclude Include="atmosphere/hemispherical_function.h" />
+    <ClInclude Include="atmosphere/measurement/measured_atmosphere.h" />
+    <ClInclude Include="atmosphere/measurement/measured_atmospheres.h" />
+    <ClInclude Include="atmosphere/model/bruneton/bruneton.h" />
+    <ClInclude Include="atmosphere/model/bruneton/core.h" />
+    <ClInclude Include="atmosphere/model/haber/haber.h" />
+    <ClInclude Include="atmosphere/model/hosek/ArHosekSkyModel.h" />
+    <ClInclude Include="atmosphere/model/hosek/ArHosekSkyModelData_CIEXYZ.h" />
+    <ClInclude Include="atmosphere/model/hosek/ArHosekSkyModelData_RGB.h" />
+    <ClInclude Include="atmosphere/model/hosek/ArHosekSkyModelData_Spectral.h" />
+    <ClInclude Include="atmosphere/model/hosek/hosek.h" />
+    <ClInclude Include="atmosphere/model/libradtran/libradtran.h" />
+    <ClInclude Include="atmosphere/model/nishita/nishita93.h" />
+    <ClInclude Include="atmosphere/model/nishita/nishita96.h" />
+    <ClInclude Include="atmosphere/model/oneal/oneal.h" />
+    <ClInclude Include="atmosphere/model/polradtran/polradtran.h" />
+    <ClInclude Include="atmosphere/model/preetham/preetham.h" />
+    <ClInclude Include="atmosphere/sun_direction.h" />
+    <ClInclude Include="external/dimensional_types/math/angle.h" />
+    <ClInclude Include="external/dimensional_types/math/binary_function.h" />
+    <ClInclude Include="external/dimensional_types/math/function.h" />
+    <ClInclude Include="external/dimensional_types/math/matrix.h" />
+    <ClInclude Include="external/dimensional_types/math/scalar.h" />
+    <ClInclude Include="external/dimensional_types/math/scalar_function.h" />
+    <ClInclude Include="external/dimensional_types/math/ternary_function.h" />
+    <ClInclude Include="external/dimensional_types/math/vector.h" />
+    <ClInclude Include="external/dimensional_types/test/test_case.h" />
+    <ClInclude Include="external/minpng/minpng.h" />
+    <ClInclude Include="external/progress_bar/util/progress_bar.h" />
+    <ClInclude Include="physics/cie.h" />
+    <ClInclude Include="physics/units.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

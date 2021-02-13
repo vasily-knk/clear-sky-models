@@ -42,7 +42,7 @@ namespace {
 constexpr int kNumLayers = 100;
 
 double AltitudeKm(int k) {
-  constexpr Number M = (1.0 - exp(-(AtmosphereRadius - EarthRadius) /
+  const Number M = (1.0 - exp(-(AtmosphereRadius - EarthRadius) /
       RayleighScaleHeight)) / kNumLayers;
   return k == kNumLayers ? 0.0 :
       (-RayleighScaleHeight * log(1.0 - (kNumLayers - k) * M)).to(km);
@@ -120,7 +120,7 @@ GridToHemisphericalMap GetGridToHemisphericalMap(
 std::string libradtran(const std::string& libradtran_uvspec) {
   const std::string cmd =
       libradtran_uvspec + " -i output/libradtran/input.txt";
-  FILE* pipe = popen(cmd.c_str(), "r");
+  FILE* pipe = _popen(cmd.c_str(), "r");
   assert(pipe);
   char buffer[256];
   std::string output = "";
@@ -129,7 +129,7 @@ std::string libradtran(const std::string& libradtran_uvspec) {
       output += buffer;
     }
   }
-  pclose(pipe);
+  _pclose(pipe);
   return output;
 }
 

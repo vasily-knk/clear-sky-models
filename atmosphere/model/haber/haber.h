@@ -38,6 +38,8 @@
 #include "math/vector.h"
 #include "physics/units.h"
 
+#include "gcem.hpp"
+
 class Haber : public Atmosphere {
  public:
   enum ScatteringType {
@@ -67,10 +69,10 @@ class Haber : public Atmosphere {
   static constexpr Number kShellRatio =
       (1.0 + PI / kNumPhi) / (1.0 - PI / kNumPhi);
   static constexpr int kNumShell =
-      ceil((log(kMaxShellRadius / kMinShellRadius) / log(kShellRatio))());
+      gcem::ceil((log(kMaxShellRadius / kMinShellRadius) / log(kShellRatio))());
 
   static constexpr int kNumTheta =
-     ceil(((pi / 2.0 + 2.0 * asin(kMaxShellRadius / (2.0 * EarthRadius))) /
+     gcem::ceil(((pi / 2.0 + 2.0 * asin(kMaxShellRadius / (2.0 * EarthRadius))) /
          kDeltaPhi)());
 
   typedef dimensional::Vector3<Length> Position;

@@ -461,13 +461,13 @@ Haber::Position Haber::GetRayIntersectionWithLastLayer(const Position& p,
 }
 
 Length Haber::GetLayerHeight(int layer_index) {
-  constexpr Number M =
+  const Number M =
       (1.0 - exp(-kMaxLayerHeight / RayleighScaleHeight)) / kNumLayers;
   return -RayleighScaleHeight * log(1.0 - layer_index * M);
 }
 
 int Haber::GetLayerIndex(const Position &p) {
-  constexpr Number M =
+  const Number M =
       (1.0 - exp(-kMaxLayerHeight/ RayleighScaleHeight)) / kNumLayers;
   Length height = length(p) - EarthRadius;
   return floor((1.0 - exp(-height / RayleighScaleHeight)) / M)();

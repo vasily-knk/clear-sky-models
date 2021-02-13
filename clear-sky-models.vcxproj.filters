@@ -1,0 +1,198 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="atmosphere/atmosphere.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="atmosphere/atmosphere_test.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="atmosphere/color.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="atmosphere/comparisons.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="atmosphere/hemispherical_function_test.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="atmosphere/measurement/measured_atmosphere.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="atmosphere/measurement/measured_atmosphere_test.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="atmosphere/measurement/measured_atmospheres.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="atmosphere/model/bruneton/bruneton.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="atmosphere/model/bruneton/core.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="atmosphere/model/haber/haber.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="atmosphere/model/hosek/ArHosekSkyModel.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="atmosphere/model/hosek/hosek.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="atmosphere/model/libradtran/libradtran.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="atmosphere/model/nishita/nishita93.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="atmosphere/model/nishita/nishita96.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="atmosphere/model/oneal/oneal.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="atmosphere/model/polradtran/polradtran.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="atmosphere/model/preetham/preetham.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="atmosphere/sun_direction.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="external/dimensional_types/test/test_main.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="external/progress_bar/util/progress_bar.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="main.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="physics/cie.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="physics/cie_test.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="atmosphere/atmosphere.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="atmosphere/color.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="atmosphere/comparisons.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="atmosphere/hemispherical_function.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="atmosphere/measurement/measured_atmosphere.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="atmosphere/measurement/measured_atmospheres.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="atmosphere/model/bruneton/bruneton.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="atmosphere/model/bruneton/core.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="atmosphere/model/haber/haber.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="atmosphere/model/hosek/ArHosekSkyModel.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="atmosphere/model/hosek/ArHosekSkyModelData_CIEXYZ.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="atmosphere/model/hosek/ArHosekSkyModelData_RGB.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="atmosphere/model/hosek/ArHosekSkyModelData_Spectral.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="atmosphere/model/hosek/hosek.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="atmosphere/model/libradtran/libradtran.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="atmosphere/model/nishita/nishita93.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="atmosphere/model/nishita/nishita96.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="atmosphere/model/oneal/oneal.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="atmosphere/model/polradtran/polradtran.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="atmosphere/model/preetham/preetham.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="atmosphere/sun_direction.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="external/dimensional_types/math/angle.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="external/dimensional_types/math/binary_function.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="external/dimensional_types/math/function.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="external/dimensional_types/math/matrix.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="external/dimensional_types/math/scalar.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="external/dimensional_types/math/scalar_function.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="external/dimensional_types/math/ternary_function.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="external/dimensional_types/math/vector.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="external/dimensional_types/test/test_case.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="external/minpng/minpng.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="external/progress_bar/util/progress_bar.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="physics/cie.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="physics/units.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
